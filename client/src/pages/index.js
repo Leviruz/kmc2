@@ -3,3 +3,8 @@ export { default as Login } from "./Login";
 export { default as Landing } from "./Landing";
 export { default as HomeLayout } from "./HomeLayout";
 export { default as Error } from "./Error";
+export { default as DashboardPage } from "./DashboardPage";
+export { default as Rota } from "./Rota";
+export { default as Motoristas } from "./Motoristas";
+export { default as Secretaria } from "./Secretaria";
+export { default as Itinerario } from "./Itinerario";

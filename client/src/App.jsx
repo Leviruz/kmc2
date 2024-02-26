@@ -1,12 +1,25 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { HomeLayout, Landing, Register, Login,Error } from "./pages";
+import {
+  HomeLayout,
+  Landing,
+  Register,
+  Login,
+  Error,
+  DashboardPage,
+  Secretaria,
+  Itinerario,
+  Motoristas,
+  Rota
+  
+} from "./pages";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
-    errorElement: <Error/>,
+    errorElement: <Error />,
     children: [
       {
         index: true,
@@ -19,6 +32,28 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "dashboard",
+        element: <DashboardPage />,
+        children:[
+          {
+            path:"secretaria",
+            element:<Secretaria/>
+          },
+          {
+            path:"motoristas",
+            element:<Motoristas/>
+          },
+          {
+            path:"rota",
+            element:<Rota/>
+          },
+          {
+            path:"itinerario",
+            element:<Itinerario/>
+          },
+        ]
       },
     ],
   },

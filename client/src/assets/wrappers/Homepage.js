@@ -1,11 +1,30 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Wrapper = styled.section`
-a{
+  .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buttons{
+    margin: 5px;
+    display: flex;
+    gap: 10px;
+  }
+  a {
     color: #fff;
-}
-display: flex;
-@media (min-width:992px){
-display: block;
-}`
-export default Wrapper
+  }
+  h1 {
+    justify-content: center;
+    text-align: center;
+    
+  }
+  @media (max-width: 992px) {
+    h1{
+    }
+    
+  }
+`;
+export default Wrapper;

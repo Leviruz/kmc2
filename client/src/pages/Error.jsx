@@ -5,7 +5,7 @@ const Error = () => {
     if (error.status === 404){
         return(
           <>
-          
+          <p>404</p>
           </>
         );
     }

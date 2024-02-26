@@ -17,7 +17,7 @@ const Register = () => {
           defaultValue=""
           labelText="confirmar senha"
         />
-        <button className="btn-1" type="submit">
+        <button className="btn-reg" type="submit">
           Registrar
         </button>
         <p>

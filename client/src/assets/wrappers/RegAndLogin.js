@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+  @media (max-width: 992px) {
+
+
+    
+  }
+
   background-color: #fff;
   min-height: 100vh;
   align-items: center;
@@ -31,10 +37,10 @@ const Wrapper = styled.section`
     text-align: center;
     line-height: 1.5;
   }
-  .btn-1{
+  .btn-1 {
     display: flex;
     margin: auto;
-    margin-top:5px;
+    margin-top: 5px;
   }
 `;
 

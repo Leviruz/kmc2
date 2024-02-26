@@ -17,7 +17,7 @@ const Login = () => {
           defaultValue=""
           labelText="confirmar senha"
         />
-        <button className="btn-1" type="submit">
+        <button className="btn-reg" type="submit">
           Entrar
         </button>
         <p>

@@ -10,14 +10,26 @@ const DashboardPage = () => {
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
-  const [checkDropdown,setCheckDropdown] = useState(false)
+  const [checkDropdown, setCheckDropdown] = useState(true);
 
-  const toggleDropdown = () =>{
+  const toggleDropdown = () => {
     setCheckDropdown(!checkDropdown);
-  }
+  };
+  const logoutUser = async () => {
+    console.log("logout");
+  };
+
+  const user = { name: "Levir" };
   return (
     <DashboardContext.Provider
-      value={{ showSidebar, checkDropdown,toggleSidebar }}
+      value={{
+        showSidebar,
+        checkDropdown,
+        user,
+        toggleSidebar,
+        toggleDropdown,
+        logoutUser,
+      }}
     >
       <Wrapper>
         <main className="dashboard">

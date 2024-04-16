@@ -18,19 +18,17 @@ app.get("/", (req, res) => {
 });
 
 app.use('/api/v1/cars',carRouter);
-//notfound
 
+//notfound
 app.use("*", (req, res) => {
   res.status(404).json({ msg: "not found" });
 });
-
 // error route
 
 app.use((err, req, res, next) => {
   console.log(err);
   res.status(500).json({ msg: "something went wrong" });
 });
-
 // port
 const port = process.env.PORT || 5000;
 

@@ -70,7 +70,7 @@ export const updateCar = async (req, res) => {
   res.status(200).json({ msg: "carro alterado com sucesso", car });
 };
 
-//delete car 
+//delete car
 
 export const deleteCar = async (req, res) => {
   const { id } = req.params;
